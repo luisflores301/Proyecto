@@ -15,9 +15,20 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!nav || !burger) return;
 
   burger.addEventListener("click", () => {
-    nav.classList.toggle("nav-open");
+    const isOpen = nav.classList.toggle("nav-open");
+
+    if (isOpen) {
+      document.body.style.overflow = "hidden";     // Bloquear fondo
+      nav.style.maxHeight = "100vh";               // Limitar el alto del menú
+      nav.style.overflowY = "auto";                // Habilitar scroll dentro del menú
+    } else {
+      document.body.style.overflow = "";           // Restaurar scroll del documento
+      nav.style.overflowY = "";
+      nav.style.maxHeight = "";
+    }
   });
 });
+
 
 /* BUSCADOR DE PRODUCTOS */
 document.addEventListener("DOMContentLoaded", () => {
