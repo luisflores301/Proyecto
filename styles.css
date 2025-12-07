@@ -99,7 +99,7 @@ body {
   color: #d9534f;
 }
 
-/* MENU BUR */
+/* MENU HAMBUR */
 .btn-burger {
   display: none;
   font-size: 28px;
@@ -154,7 +154,7 @@ body {
   flex-direction: column;
   text-align: center;
   color: white;
-  background: url("Imagenes/Medio.png") center/cover no-repeat;
+  background: url("Imagenes/Medio.png") center;
 }
 
 .banner h1 {
@@ -323,9 +323,7 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-
 /* TARJETAS DE SUELOS */
-
 .item-suelo img {
     width: 320px;             
     height: 220px;           
@@ -347,7 +345,6 @@ body {
 }
 
 /* REGISTRO */
-
 .registro-container {
     max-width: 900px;
     margin: 40px auto;
@@ -427,15 +424,7 @@ body {
     transform: translateY(-2px);
 }
 
-
-
-
-
-
-
-
-
-
+/* RESPONSIVE SUEL0S */
 @media (max-width: 780px) {
     .item-suelo {
         flex-direction: column;
@@ -453,8 +442,7 @@ body {
     }
 }
 
-
-
+/* RESP PARA MOVIL HAMBURGUESA */
 @media (max-width: 760px) {
 
     .nav-principal {
@@ -464,11 +452,11 @@ body {
         top: 70px;
         left: 0;
         right: 0;
-        bottom: 0;                  /* <- añade esto */
+        bottom: 0;                  
         background: #000;
         padding: 20px;
         z-index: 999;
-        overflow-y: auto;           /* <- permite hacer scroll al menú */
+        overflow-y: auto;         
     }
 
 }
