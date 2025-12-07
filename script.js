@@ -18,17 +18,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const isOpen = nav.classList.toggle("nav-open");
 
     if (isOpen) {
-      document.body.style.overflow = "hidden";     // Bloquear fondo
-      nav.style.maxHeight = "100vh";               // Limitar el alto del menú
-      nav.style.overflowY = "auto";                // Habilitar scroll dentro del menú
+      document.body.style.overflow = "hidden";  
+      nav.style.maxHeight = "100vh";             
+      nav.style.overflowY = "auto";              
     } else {
-      document.body.style.overflow = "";           // Restaurar scroll del documento
+      document.body.style.overflow = "";          
       nav.style.overflowY = "";
       nav.style.maxHeight = "";
     }
   });
 });
-
 
 /* BUSCADOR DE PRODUCTOS */
 document.addEventListener("DOMContentLoaded", () => {

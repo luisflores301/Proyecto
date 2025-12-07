@@ -461,36 +461,6 @@ body {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Responsive */
 @media (max-width: 850px) {
     .pie-grid {
@@ -504,7 +474,7 @@ body {
     }
 }
 
-/* ========== RESPONSIVE ========== */
+/* Responsive */
 @media (max-width: 1000px) {
   .grid-categorias { grid-template-columns: repeat(3, 1fr); }
   .texto-banner h2 { font-size: 48px; }
