@@ -27,9 +27,7 @@
             <button class="btn-buscar">🔎</button>
         </div>
 
-        <div class="area-usuario">
-            <a class="enlace" href="#">Registro</a>
-        </div>
+
 
     </div>
 
@@ -42,16 +40,17 @@
     <!-- CREAR CUENTA -->
     <section class="form-box">
         <h2>Crear una cuenta</h2>
-
-        <div class="form-grid">
+        <form id="form-box">
+          <div class="form-grid">
             <input type="text" placeholder="Nombre">
             <input type="text" placeholder="Apellido">
             <input type="email" placeholder="Correo electrónico">
             <input type="text" placeholder="País">
             <input type="tel" placeholder="Número de celular">
-        </div>
-
+          </div>
+        
         <button class="btn-principal">Registrar</button>
+        </form>
     </section>
 
     <!-- SOPORTE -->
@@ -63,7 +62,7 @@
             <textarea placeholder="Describe la falla o problema del equipo"></textarea>
         </div>
 
-        <button class="btn-principal">Enviar solicitud</button>
+        <button id="btn-soporte" class="btn-principal">Enviar solicitud</button>
     </section>
 
 </main>

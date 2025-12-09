@@ -81,3 +81,28 @@ document.addEventListener("DOMContentLoaded", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
+
+
+/* FORMULARIO REGISTRO - MENSAJE */
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("form-box");
+
+  if (!form) return;  
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert("Información enviada");
+  });
+});
+
+
+/* FORMULARIO SOPORTE */
+document.addEventListener("DOMContentLoaded", () => {
+  const btnSoporte = document.getElementById("btn-soporte");
+
+  if (btnSoporte) {
+    btnSoporte.addEventListener("click", () => {
+      alert("Solicitud de soporte enviada");
+    });
+  }
+});
